@@ -6,9 +6,9 @@ public class BookShelf implements Aggregate {
     //private int last = 0;
     // コンストラクタ
     // 本棚のサイズを受け取って領域を確保
-    public BookShelf(int initialize) {
+    public BookShelf(int maxsize) {
         //this.books = new Book[maxsize];
-        this.books = new ArrayList<Book>(initialize);
+        this.books = new ArrayList<Book>(maxsize);
     }
     // 任意の位置のbookの取得
     public Book getBookAt(int index) {
