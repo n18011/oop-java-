@@ -6,10 +6,10 @@ import java.util.HashMap;
 
 public class IDCardFactory extends Factory{
     private Map<Integer, String> owners = new HashMap<>();
-    private int last = 1;
+    private int cardNo = 1;
     @Override
     protected Product createProduct(String owner) {
-        return new IDCard(last++, owner);
+        return new IDCard(cardNo++, owner);
     }
     @Override
     protected void registerProduct(Product product) {
